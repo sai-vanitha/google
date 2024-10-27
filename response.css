@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+    background-color: white;
+}
+.header{
+    font-size: 1rem;
+    display: flex;
+    align-items: baseline;
+   justify-content: flex-end;
+    padding: 20px;
+    gap: 15px;
+    margin: 10px;
+
+}
+.flask,.apps{
+    position: relative;
+    top: 5px;
+}
+.person{
+    position: relative;
+    font-size: 1.3rem;
+    top: 8px;
+
+}
+.Gmail:hover,.Images:hover{
+    background-color: yellowgreen;
+    transition: 0.4sec ease-out;
+}
+.flask:hover, .apps:hover{
+    background-color: yellowgreen;
+   border-radius: 100%;
+    padding:4px;
+   
+}
+
+.logo{
+    display: flex; 
+   height:auto;
+   width: auto;
+    margin-right: 50%;
+   margin-left: 40%;
+   margin-top: 5%;
+
+}
+
+.Gmail, .Images, .flask, .apps {
+    text-decoration: underline;
+}
+
+.search{
+    width:300px;
+    border: 0px;
+    outline: 0px;
+    margin-left: 10px;
+}
+.searchbar{
+    width: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+    top: 3%;
+    left: 8%;
+    border: 1px;
+    border-radius: 40px;
+    box-shadow: 3px 3px 5px;
+    margin-left: 25%;
+   
+
+}
+.mic, .scanner {
+    width: 25px;
+    display:flex;
+    gap: 30px;
+   
+}
+.mic{
+    width: 25px;
+    position: relative;
+    top: 13px;
+}
+.scanner {
+    width: 25px;
+    position: relative;
+   bottom: 11px;
+   left: 30px;
+}
+.mic:hover, .scanner:hover, .Gmail, .Images, .apps, .flask, .person {
+    cursor:pointer; 
+}
+@media screen and (width <=500px){
+    .header{
+      font-size: 14px;
+      justify-content: flex-end;
+    }
+    .logo{
+        justify-content: center;
+    }
+    .searchbar{
+        justify-content: center;
+        width: 37-px;
+        margin-left: 2px;
+    }
+}
